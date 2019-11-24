@@ -18,6 +18,8 @@ public class Player : MonoBehaviour
     private bool isReloading = false;
 
     private UIManager _uiManager;
+    
+    public bool hasCoin;
 
     // Start is called before the first frame update
     void Start()
@@ -50,9 +52,6 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // if left click
-        // cast ray from center point of main camera
-
         if (Input.GetMouseButton(0) && currentAmmo > 0)
         {
             Shoot();
@@ -68,7 +67,6 @@ public class Player : MonoBehaviour
             StartCoroutine(Reload());
         }
 
-        // show cursor again if asked
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Cursor.visible = false;
