@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 4067de1a02072244798361060c5e7325, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -1187,7 +1187,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1211704389
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1613,13 +1613,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ammoText: {fileID: 554530624}
-  _coin: {fileID: 1211704390}
+  _coin: {fileID: 1211704388}
 --- !u!1 &1577645070 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1174503903678904, guid: 93fb048d0136f084cb1f783ca99e5ea7,
     type: 3}
   m_PrefabInstance: {fileID: 759337997}
   m_PrefabAsset: {fileID: 0}
+--- !u!54 &1577645071
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1577645070}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!65 &1577645073
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1628,11 +1644,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1577645070}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 2.6300106, z: 1}
-  m_Center: {x: 0, y: 0.8150053, z: 0}
+  m_Size: {x: 2.8721814, y: 2.6300106, z: 2.787191}
+  m_Center: {x: -0.013313055, y: 0.8150053, z: 0.89359546}
 --- !u!1001 &1641539313
 PrefabInstance:
   m_ObjectHideFlags: 0
